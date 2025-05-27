@@ -213,4 +213,18 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 2000);
         }, 1500);
     });
+
+
+    const aumentaFonteBotao = document.getElementById('aumentar-fonte');
+    const diminuiFonteBotao = document.getElementById('diminuir-fonte');
+
+    let tamanhoAtualFonte = 1;
+
+        aumentaFonteBotao.addEventListener('click', function () {
+            tamanhoAtualFonte += 0.1;
+            document.body.style.fontSize = `${tamanhoAtualFonte}rem`
+
+        })
+
+        diminuiFo
 });
